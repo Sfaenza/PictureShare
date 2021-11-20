@@ -30,7 +30,7 @@
 			$E="SELECT * FROM users where Email='$email'";
 			$r=mysqli_query($myConn, $E);
 			if(mysqli_num_rows($r) > 0)$err['email']="Email has been registered";
-			
+					
 			
 			//数字字母下划线
 			if(!preg_match("/^([A-Z]|[a-z]|\d|_){8,}$/", $password)){
@@ -54,15 +54,6 @@
 				$err['name']="Invalid name.";
 			}
 			
-			if(!preg_match("/^([A-Z]|[a-z]| )+$/", $post)){
-				$err['post']="Invalid post.";
-			}
-			
-			if(!preg_match("/^(\d)+$/", $phone)){
-				$err['phone']="Invalid phone number.";
-			}
-			
-			
 			if (empty($err)){
 					//form data okay. insert to the users table.
 					
@@ -74,6 +65,7 @@
 					$q="INSERT INTO users (Email, Password, Name)
 					VALUES ('$email',SHA('$password'), '$name')";
 					
+					
 					//execute the query
 					$r=mysqli_query($myConn, $q);
 
@@ -82,12 +74,14 @@
 					//it can be implemented as view_users.php
 					if($r){
 						
-						echo "Sing up successful wait admin confirm！";
+						echo "<script>alert('Sing up successful！');</script>";
+						echo "<script>window.open('index.php', '_SELF')</script>";
 						}
-					}
+					
 					else {
 						//the insertion action is failed
-						echo "Inserting data to table is failed.";
+						echo "Inserting data to table is failed111.";
+					}
 					}
 			}
 
