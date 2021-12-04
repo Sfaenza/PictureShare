@@ -20,7 +20,7 @@
 		  <meta charset="utf-8">
 		  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-		  <title>CS-518 picture shell</title>
+		  <title>Picture Share</title>
 		  <meta content="" name="description">
 		  <meta content="" name="keywords">
 
@@ -48,7 +48,7 @@
 				echo '<header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.php">Pictuers Shell</a></h1><br>
+      <h1 class="logo"><a href="index.php">Picture Share</a></h1><br>
 	  <!--Uncomment below if you prefer to use an image logo -->
 	   <!--<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>-->
 
@@ -58,8 +58,8 @@
 				$name = $_SESSION['name'];
 				
 			
-				echo '<li><a class = "nav-link scrollto" href = "pictureshell.php">Pictuers</a></li>';
-				echo '<li><a class = "nav-link scrollto" href = "upload.php">Upload picture</a></li>';
+				echo '<li><a class = "nav-link scrollto" href = "pictureshell.php">Picture</a></li>';
+				echo '<li><a class = "nav-link scrollto" href = "upload.php">Upload Picture</a></li>';
 				echo '<li><a class = "nav-link scrollto" href = "changing_pasword.php?email='.$email.'">Change Password</a></li>';
             		
             	//allow user to log out
@@ -105,7 +105,7 @@
 	echo '<footer id="footer">
 			<div class="container py-4">
 			  <div class="copyright">
-				&copy; Copyright <strong><span>CS-518 picture shell</span></strong>
+				&copy; Copyright <strong><span>Picture Share</span></strong>
 			  </div>
 			</div>
 		  </footer><!-- End Footer -->

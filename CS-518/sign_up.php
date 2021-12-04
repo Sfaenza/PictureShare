@@ -90,7 +90,7 @@
 <!-- // above ends the php code  -->
 
 <!-- // below sets up the input setup for the data and notes all info is required -->
-		<h3> The IEEE Users Form</h3>
+		<h3> Sign Up</h3>
 
 		<p class="err">* All fields required</p>
 

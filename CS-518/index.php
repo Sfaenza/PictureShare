@@ -62,7 +62,7 @@
 	?>	
 	
 	<div align='center'>
-	<h1>CS-518 picture shell</h1>
+	<h1>Picture Share</h1>
 	<form acton="" method="POST">
 			
 
